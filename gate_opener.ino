@@ -33,12 +33,12 @@ void loop() {
   int cm0 = sonar0.ping_cm();
   int cm1 = sonar1.ping_cm();
 
-  Serial.println(cm1); // Use "serial plotter" to debug
+  //to debug ping sensor:
+  //Serial.println(cm1); // Use "serial plotter" to debug
 
-
+  //open gate for sonar0
   if ( cm0 >= 1)
   {
-    //open gate for sonar0
     for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
       // in steps of 1 degree
       myservo.write(pos); // tell servo to go to position in variable 'pos'
@@ -54,11 +54,9 @@ void loop() {
     }
   }
 
-
-
+  //open gate for sonar0
   if ( cm1 >= 1)
   {
-    //open gate for sonar0
     for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
       // in steps of 1 degree
       myservo.write(pos); // tell servo to go to position in variable 'pos'
