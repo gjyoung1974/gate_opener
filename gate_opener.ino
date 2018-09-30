@@ -2,6 +2,7 @@
  * Utra-sonic gate opener
  * This program reads a Paralax Utra-sonic "ping" sensor
  * When the sensor is triggered, an analog servo is opened
+ * Opening a toy car gate, allowing a matchbox car to pass
  * 2018 Nathan Young
  * 
  */
