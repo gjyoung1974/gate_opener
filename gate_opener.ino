@@ -80,8 +80,7 @@ void loop() {
       delay(15); // waits 15ms for the servo to reach the position
     }
   }
-
-
+ 
   delay(250); //wait 250 uSecondds
 
   //reset our values
