@@ -33,10 +33,10 @@ void loop() {
   int cm0 = sonar0.ping_cm();
   int cm1 = sonar1.ping_cm();
 
-  Serial.println(cm0); // Use "serial plotter" to debug
+  Serial.println(cm1); // Use "serial plotter" to debug
 
-  if (cm0 >= 1)
 
+  if ( cm0 >= 1)
   {
     //open gate for sonar0
     for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
@@ -54,8 +54,9 @@ void loop() {
     }
   }
 
-  if (cm1 >= 1)
 
+
+  if ( cm1 >= 1)
   {
     //open gate for sonar0
     for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
@@ -72,6 +73,7 @@ void loop() {
       delay(15); // waits 15ms for the servo to reach the position
     }
   }
+
 
   delay(250); //wait 250 uSecondds
 
